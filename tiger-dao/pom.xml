@@ -6,10 +6,9 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>tiger-dao</artifactId>
     <packaging>war</packaging>
+    <artifactId>tiger-dao</artifactId>
     <name>tiger-dao</name>
-    <url>http://maven.apache.org</url>
 
     <dependencies>
 

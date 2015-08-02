@@ -17,14 +17,14 @@ import javax.annotation.Resource;
  */
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(locations = {"classpath:spring/spring-mybatis.xml"})
+@ContextConfiguration(locations = {"classpath:spring/spring.xml","classpath:spring/spring-mybatis.xml"})
 public class TestCase {
 
     @Autowired
-    UserServiceImpl userServiceImpl;
+    UserService userService;
     @Test
     public void testUser(){
-        User user = userServiceImpl.getUserById(1l);
+        User user = userService.getUserById(1l);
         System.out.println(user);
     }
 
