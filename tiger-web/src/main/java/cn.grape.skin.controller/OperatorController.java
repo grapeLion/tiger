@@ -28,7 +28,7 @@ public class OperatorController {
         Map<String,Object> map = new HashMap<String, Object>();
         User user = userService.getUserById(Long.valueOf(id));
         map.put("user",user);
-        return new  ModelAndView("index",map);
+        return new  ModelAndView("register",map);
 
     }
 
