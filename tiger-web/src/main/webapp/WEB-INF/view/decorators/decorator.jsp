@@ -8,6 +8,12 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
+    <script type="text/javascript" src="${path}/static/jquery-easyui-1.4.3/jquery.min.js"></script>
+    <script type="text/javascript" src="${path}/static/jquery-easyui-1.4.3/jquery.easyui.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="${path}/static/jquery-easyui-1.4.3/themes/metro/easyui.css"/>
+    <link type="text/css" rel="stylesheet" href="${path}/static/jquery-easyui-1.4.3/themes/icon.css"/>
+    <link type="text/css" rel="stylesheet" href="${path}/static/jquery-easyui-1.4.3/themes/color.css"/>
+    <script type="text/javascript" src="${path}/static/jquery-easyui-1.4.3/locale/easyui-lang-zh_CN.js"></script>
   <sitemesh:write property='head'/>
   <style type='text/css'>
     .mainBody {

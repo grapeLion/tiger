@@ -2,6 +2,8 @@ package cn.grape.skin.mapper;
 
 import cn.grape.skin.domain.User;
 
+import java.util.List;
+
 /**
  * Created by Emily on 15/8/1.
  */
@@ -18,4 +20,6 @@ public interface UserMapper {
     int updateByPrimaryKeySelective(User record);
 
     int updateByPrimaryKey(User record);
+
+    List<User> findAll();
 }

@@ -12,9 +12,10 @@
 </head>
 <body>
   <div align="center">
-    <p>用户名：<input type="text" id="userName" ></p>
-    <p>密码：    <input type="text" id="pwd"></p>
-    <p>验证码：<input type="text" id="validate"></p>
+    <table id="user_table"></table>
   </div>
 </body>
+
+<script type="text/javascript" src="/static/js/user_list.js"></script>
+
 </html>

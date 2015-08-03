@@ -11,6 +11,7 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import javax.annotation.Resource;
+import java.util.List;
 
 /**
  * Created by Emily on 15/8/1.
@@ -28,5 +29,11 @@ public class TestCase {
         System.out.println(user);
     }
 
+    @Test
+    public void testAllUser(){
+        List<User> users = userService.findAll();
+        User user = userService.getUserById(1l);
+        System.out.println(user);
+    }
 
 }

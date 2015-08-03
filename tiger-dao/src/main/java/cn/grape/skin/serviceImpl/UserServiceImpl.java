@@ -6,6 +6,8 @@ import cn.grape.skin.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 /**
  * Created by Emily on 15/8/1.
  */
@@ -18,5 +20,9 @@ public class UserServiceImpl implements UserService {
 
         User user = userMapper.selectByPrimaryKey(id);
         return user;
+    }
+
+    public List<User> findAll() {
+        return userMapper.findAll();
     }
 }
